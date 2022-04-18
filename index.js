@@ -1,6 +1,8 @@
 const {Client} = require('pg');
 require ('dotenv').config();
 
+//regular query that selects all columns from table
+
 const client = new Client ({
     user:"academy",
     password: process.env.password,
