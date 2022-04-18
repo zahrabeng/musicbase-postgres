@@ -10,12 +10,13 @@ const client = new Client ({
 async function excecute(){
     try{
 
-    await client.connect();
-    const res = client.query("SELECT * FROM artists");
-    console.log(res.rows);
+    await client.connect()
+    console.log("Connected Successfully")
+    const res = await client.query("SELECT * FROM artists")
+    console.log(res.rows)
     }
     catch(ex){
-        console.log(`Something wronh happened ${ex}`)
+        console.log(`Something wrong happened ${ex}`)
     }
     finally{
         await client.end();
