@@ -1,4 +1,21 @@
 {
+  "name": "musicbase-postgres",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahrabeng/musicbase-postgres.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zahrabeng/musicbase-postgres/issues"
+  },
+  "homepage": "https://github.com/zahrabeng/musicbase-postgres#readme",
+  "description": "",
   "dependencies": {
     "dotenv": "^16.0.0",
     "pg": "^8.7.3"
