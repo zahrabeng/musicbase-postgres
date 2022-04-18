@@ -7,7 +7,7 @@ async function excecute(){
     const values = [3];
 
     const res = await client.query(text,values)
-    console.log(res.rows)
+    console.table(res.rows)
     await client.end()
 }
 
